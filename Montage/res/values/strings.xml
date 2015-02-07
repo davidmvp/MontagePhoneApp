@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, ListViewImagesActivity!</string>
+    <string name="app_name">Montage</string>
+    <string name="detailedView">Detailed View!</string>
+    <string name="detailedViewActivity">Detailed View Page</string>
+    <string name="Camera">Camera</string>
+    <string name="LikeButtonString">Like</string>
+    <string name="DislikeButtonString">Dislike</string>
+    <string name="FlagButton">Flag</string>
+    <string name="LikeCountString">Like Count: 0</string>
+    <string name="DislikeCountString">Dislike Count: 0</string>
+    <string name="PostButton">Post</string>
+    <string name="Comment">Comment:</string>
+    <string name="UploadText">Upload Text</string>
+    <string name="UploadImage">Upload Image</string>
+    <string name="ErrorTextString">Error: Montage Application server not found. Please try again.</string>
+    <string name="errorViewActivity">Error View Page</string>
+</resources>

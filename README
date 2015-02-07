@@ -1,0 +1,8 @@
+Changes since the presentation:
+
+The refresh button works in that things will be sent to the server and then
+pulled back and be displayed in a local newsfeed.
+
+Also, hibernate bugs are fixed and everything is full circle.  Media and user
+IDs contained in MontageServer.java will be serialized to the database and
+pulled up again upon start up of the server.

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence"
+	version="2.0">
+
+	<persistence-unit name="MontagePersistence"
+		transaction-type="RESOURCE_LOCAL">
+		<provider>org.hibernate.ejb.HibernatePersistence</provider>
+	    
+		<class>edu.jhu.cs.oose.montage.model.hibernate.CoordinatesHib</class>
+		<class>edu.jhu.cs.oose.montage.model.hibernate.GridSquareHib</class>
+		<class>edu.jhu.cs.oose.montage.model.hibernate.NewsfeedHib</class>
+		<class>edu.jhu.cs.oose.montage.model.hibernate.UserHib</class>
+		<class>edu.jhu.cs.oose.montage.model.hibernate.media.DrawingHib
+		</class>
+		<class>edu.jhu.cs.oose.montage.model.hibernate.media.MediaHib
+		</class>
+		<class>edu.jhu.cs.oose.montage.model.hibernate.media.PhotoHib
+		</class>
+		<class>edu.jhu.cs.oose.montage.model.hibernate.media.TextPostHib
+		</class>
+
+		<properties>
+			<property name="hibernate.show_sql" value="true" />
+			<property name="hibernate.format_sql" value="true" />
+			<property name="hibernate.connection.driver_class" value="com.mysql.jdbc.Driver" />
+			<property name="hibernate.connection.url" value="jdbc:mysql://localhost/oose" />
+			<property name="hibernate.connection.username" value="root" />
+			<property name="hibernate.connection.password" value="" />
+			<property name="hibernate.dialect" value="org.hibernate.dialect.MySQLDialect" />
+			<property name="hibernate.hbm2ddl.auto" value="create" />
+		</properties>
+	</persistence-unit>
+	<!-- <property name="transaction.factory_class">org.hibernate.transaction.JDBCTransactionFactory</property> 
+		<property name="hibernate.hbm2ddl.auto">create</property> <property name="hibernate.cache.provider_class">org.hibernate.cache.HashtableCacheProvider</property> 
+		<property name="current_session_context_class">thread</property> <mapping 
+		package="edu.jhu.cs.oose.montage.model.hibernate" /> <mapping package="edu.jhu.cs.oose.montage.model.hibernate.media" 
+		/> </session-factory> </hibernate-configuration> -->
+</persistence>

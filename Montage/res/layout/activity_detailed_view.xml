@@ -1,0 +1,85 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:text="@string/detailedView" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="68dp"/>
+    
+    <Button
+	    android:id="@+id/button1"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="155dp"
+	    android:text="@string/LikeButtonString" />
+
+    <TextView
+	    android:id="@+id/textView2"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignBottom="@+id/button1"
+	    android:layout_toRightOf="@+id/button1"
+	    android:layout_marginTop="120dp"
+	    android:text="@string/LikeCountString" />
+    
+    <Button
+	    android:id="@+id/DislikeButton"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@+id/button1"
+	    android:layout_marginTop="155dp"
+	    android:text="@string/DislikeButtonString" />
+
+    <TextView
+	    android:id="@+id/DislikeCountView"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignBottom="@+id/DislikeButton"
+	    android:layout_toRightOf="@+id/DislikeButton"
+	    android:layout_marginTop="120dp"
+	    android:text="@string/DislikeCountString" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        android:ems="10"
+        android:inputType="textMultiLine" />
+
+    <Button
+	    android:id="@+id/button2"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@+id/imageView1"
+	    android:layout_toRightOf="@+id/editText2"
+	    android:layout_marginTop="22dp"
+	    android:text="@string/PostButton" />
+
+    <TextView
+	    android:id="@+id/textView3"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignLeft="@+id/editText2"
+	    android:layout_below="@+id/editText2"
+	    android:layout_marginTop="22dp"
+	    android:textSize="25dp"
+	    android:text="@string/Comment" />
+
+</RelativeLayout>
